@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 
-type requestStep = string;
+type requestStep = "start" | "pending" | "finished" | "idle";
 
 type State = {
   isRequestInProgress: boolean;
